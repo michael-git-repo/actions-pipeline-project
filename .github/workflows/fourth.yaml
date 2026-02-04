@@ -50,8 +50,9 @@ jobs:
         run: echo "running the gcp job"
 
   alibaba-job:
-    needs: azure-job
-    needs: aws-job
+    needs:
+      - azure-job
+      - aws-job
     runs-on: ubuntu-latest
     steps:
       - name: alibaba job
