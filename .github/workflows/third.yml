@@ -8,12 +8,14 @@ jobs:
       - name: i want ot build
         run: echo "building"
   Test:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: testing
         run: echo "testing it"
 
   deploy:
+    needs: Test
     runs-on: ubuntu-latest
     steps:
       - name: deploying
