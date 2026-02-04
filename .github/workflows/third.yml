@@ -20,3 +20,9 @@ jobs:
     steps:
       - name: deploying
         run: echo "runing the deploy"
+
+  finish:
+    runs-on: macos-14
+    steps:
+      - name: last job
+        run: echo "fininsing the job"
