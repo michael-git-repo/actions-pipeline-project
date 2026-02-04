@@ -27,3 +27,10 @@ jobs:
     steps:
       - name: last job
         run: echo "finishing the job"
+
+  aws-job:
+    needs: finish
+    runs-on: ubuntu-latest
+    steps:
+      - name: aws job
+        run: echo "running the aws job"
