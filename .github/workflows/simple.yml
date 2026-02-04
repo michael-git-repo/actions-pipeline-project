@@ -1,0 +1,9 @@
+name: greeting
+on: workflow_dispatch
+
+jobs:
+  my_greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: greeting to mike
+        run: echo "good evening michael"
