@@ -1,4 +1,4 @@
-name: one work flow with 2 jobs
+name: example
 on: workflow_dispatch
 
 jobs:
@@ -7,7 +7,6 @@ jobs:
     steps:
       - name: greeting to mike
         run: echo "good evening michael"
-
 jobs:
   second_job:
     runs-on: ubuntu-latest
