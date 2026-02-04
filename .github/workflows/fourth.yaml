@@ -34,3 +34,10 @@ jobs:
     steps:
       - name: aws job
         run: echo "running the aws job"
+
+  azure-job:
+    needs: finish
+    runs-on: ubuntu-latest
+    steps:
+      - name: azure job
+        run: echo "running the azure job"
