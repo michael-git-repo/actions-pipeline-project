@@ -41,3 +41,10 @@ jobs:
     steps:
       - name: azure job
         run: echo "running the azure job"
+  
+  gcp-job:
+    needs: deploy
+    runs-on: macos-14 
+    steps:
+      - name: gcp job
+        run: echo "running the gcp job"
