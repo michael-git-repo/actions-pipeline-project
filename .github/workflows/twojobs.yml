@@ -1,0 +1,21 @@
+name: hello world
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first job
+        run: echo "this is the first job"
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: second job
+        run: echo "this is the second job"
+
+  deploy:
+      runs-on: windows-latest
+      steps:
+        - name: third job
+          run: echo "this is the third job"
