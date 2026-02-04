@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: greeting to mike
         run: echo "good evening michael"
-jobs:
+
   second_job:
     runs-on: ubuntu-latest
     steps:
