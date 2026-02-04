@@ -1,0 +1,16 @@
+name: one work flow with 2 jobs
+on: workflow_dispatch
+
+jobs:
+  my_greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: greeting to mike
+        run: echo "good evening michael"
+
+jobs:
+  second_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: second job
+        run: echo "this is my second job"
