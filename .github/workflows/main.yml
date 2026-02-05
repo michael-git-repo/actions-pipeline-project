@@ -1,0 +1,9 @@
+name: variable
+on: workflow_dispatch
+
+jobs:
+  variable-job:
+    runs-on: macos-14
+    steps:
+      - name: mike
+        run: echo "is $MIKE ?"
